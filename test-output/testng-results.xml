@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-06T12:54:34 PST" name="Default suite" finished-at="2022-03-06T12:54:50 PST" duration-ms="16709">
+    <groups>
+    </groups>
+    <test started-at="2022-03-06T12:54:34 PST" name="Default test" finished-at="2022-03-06T12:54:50 PST" duration-ms="16709">
+      <class name="Linkedin.LinkedinSignin">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Linkedin.LinkedinSignin@6025e1b6]" started-at="2022-03-06T12:54:34 PST" name="OpenBrowser" finished-at="2022-03-06T12:54:38 PST" duration-ms="4265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="pswrdtestErrorMessage()[pri:0, instance:Linkedin.LinkedinSignin@6025e1b6]" started-at="2022-03-06T12:54:38 PST" name="pswrdtestErrorMessage" finished-at="2022-03-06T12:54:44 PST" duration-ms="6136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pswrdtestErrorMessage -->
+        <test-method signature="usertestErrorMessage()[pri:0, instance:Linkedin.LinkedinSignin@6025e1b6]" started-at="2022-03-06T12:54:44 PST" name="usertestErrorMessage" finished-at="2022-03-06T12:54:50 PST" depends-on-methods="Linkedin.LinkedinSignin.pswrdtestErrorMessage" duration-ms="6168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usertestErrorMessage -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Linkedin.LinkedinSignin@6025e1b6]" started-at="2022-03-06T12:54:50 PST" name="CloseBrowser" finished-at="2022-03-06T12:54:50 PST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Linkedin.LinkedinSignin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
