@@ -1,0 +1,21 @@
+Password
+Expected and Actual Error Message Matched:
+Please enter a password.
+
+User Email/Contact Number
+Expected and Actual Error Message Matched:
+Please enter an email address or phone number
+
+PASSED: pswrdtestErrorMessage
+PASSED: usertestErrorMessage
+
+===============================================
+    Default test
+    Tests run: 2, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Default suite
+Total tests run: 2, Passes: 2, Failures: 0, Skips: 0
+===============================================
