@@ -26,12 +26,12 @@ public class LinkedinSignin {
   }
   @Test
   public void pswrdtestErrorMessage() throws InterruptedException {
-	  driver.findElement(By.xpath("//input[@id='username']")).sendKeys(contactNumber);
+	  driver.findElement(By.id("username")).sendKeys(contactNumber);
 	  Thread.sleep(2000);
 	  driver.findElement(By.xpath("//button[@class='btn__primary--large from__button--floating']")).click();
 	  Thread.sleep(2000);
 	  String EM = "Please enter a password.";
-	  pswrdtestErrorMessage = driver.findElement(By.xpath("//div[@id='error-for-password']")).getText();
+	  pswrdtestErrorMessage = driver.findElement(By.id("error-for-password")).getText();
 	  if(pswrdtestErrorMessage.equals(EM)) {
 		  System.out.println("Password" + "\n" + "Expected and Actual Error Message Matched:" + "\n" + pswrdtestErrorMessage + "\n" );
 	  }else {
@@ -42,13 +42,13 @@ public class LinkedinSignin {
   }
   @Test(dependsOnMethods = ("pswrdtestErrorMessage"))
   public void usertestErrorMessage() throws InterruptedException {
-	  driver.findElement(By.xpath("//input[@id='username']")).clear();
-	  driver.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
+	  driver.findElement(By.id("username")).clear();
+	  driver.findElement(By.id("password")).sendKeys(password);
 	  Thread.sleep(2000);
 	  driver.findElement(By.xpath("//button[@class='btn__primary--large from__button--floating']")).click();
 	  Thread.sleep(2000);
 	  String EM = "Please enter an email address or phone number";
-	  usertestErrorMessage = driver.findElement(By.xpath("//div[@id='error-for-username']")).getText();
+	  usertestErrorMessage = driver.findElement(By.id("error-for-username")).getText();
 	  if(usertestErrorMessage.equals(EM)) {
 		  System.out.println("User Email/Contact Number" + "\n" + "Expected and Actual Error Message Matched:" + "\n" + usertestErrorMessage + "\n" );
 	  }else {
