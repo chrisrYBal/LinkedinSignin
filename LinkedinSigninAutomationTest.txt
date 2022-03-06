@@ -1,0 +1,12 @@
+Feature: Signin Form Test Suite
+Test Required fields error messages for Linkedin Signin module
+
+Scenario: Incomplete the input of fields
+
+Given I provided valid input
+
+AND I input just 1 textbox
+
+WHEN I click the 'Signin' Button
+
+THEN I should see an expected error message for specific field
